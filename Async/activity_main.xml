@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/start_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dip"
+        android:text="@string/start_message"
+        android:textColor="#FD110303" />
+
+    <TextView
+        android:id="@+id/reset_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dip"
+        android:text="@string/reset_message"
+        android:textColor="#FD110303" />
+
+    <TextView
+        android:id="@+id/exit_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dip"
+        android:text="@string/exit_message"
+        android:textColor="#FD110303" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingTop="10dip"
+        android:text="@string/progress_bar_message"
+        android:textColor="#FD110303" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="20dip"
+        android:indeterminate="false"
+        android:padding="10dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dip"
+            android:padding="14dip"
+            android:text="@string/start_button" />
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dip"
+            android:padding="14dip"
+            android:text="@string/reset_button" />
+
+        <Button
+            android:id="@+id/exit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dip"
+            android:padding="14dip"
+            android:text="@string/exit_button" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageViewDragon"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:src="@drawable/dragon"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageViewDragonBallZ"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:src="@drawable/dragon_ball_z"
+        android:visibility="visible" />
+</LinearLayout>
